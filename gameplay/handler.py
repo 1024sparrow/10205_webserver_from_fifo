@@ -269,8 +269,9 @@ class IndexHandler(tornado.web.RequestHandler):
 	def head(self):
 		pass
 	def get(self):
-		self.write('hello boris')
-		self.finish()
+		#self.write('hello boris')
+		#self.finish()
+		self.render('index.html')
 
 
 

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<title>
+TITLE
+</title>
+<style>
+body
+{
+	background: black;
+	color: #888;
+}
+#taken-content
+{
+	color: red;
+	border:1px solid red ;
+	border-radius:20px;
+	padding:20px
+}
+</style>
+</head>
+<body>
+
+
+<button id="bnRequest">
+GET
+</button>
+<p id="taken-content">
+&lt;not requested yet&gt;
+</p>
+
+<script>
+function onRequested(){
+	alert('boris here: create WebSocket and write to it');
+};
+document.getElementById('bnRequest').addEventListener('click', onRequested);
+</script>
+
+
+</body>
+</html>
